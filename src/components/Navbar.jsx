@@ -1,7 +1,7 @@
 import {useState} from "react";
 import OverlayMenu from "./OverlayMenu";
 import Logo from "../assets/Logo.png"
-
+import { FiMenu } from "react-icons/fi";
 
 export default function Navbar(){
   const[menuOpen,setMenuOpen] =useState(false);
@@ -16,10 +16,14 @@ export default function Navbar(){
     <img src={Logo} alt="logo" className="w-10 h-auto max-w-[40px]"
 
 />
-  <div className="text-2xl font-bold text-white hidden sm:=block">
+  <div className="text-2xl font-bold text-white hidden sm:block">
   NIKHIL
 </div>
-
+  </div>
+  <div className="block lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+  <button >
+    <FiMenu />
+  </button>
 
   </div>
     </nav>
