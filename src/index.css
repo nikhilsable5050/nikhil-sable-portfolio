@@ -7,13 +7,12 @@
 /* 🔑 CRITICAL FIX: FULL SCREEN HEIGHT AND MARGIN RESET */
 /* ---------------------------------------------------- */
 
-html, 
+html,
 body,
-#root { /* Target the main HTML elements */
+#root {
   margin: 0;
-  padding: 0; 
-  /* Force them to take up 100% of the viewport width and height */
-  height: 100%; 
+  padding: 0;
+  height: 100%;
   width: 100%;
 }
 
@@ -22,11 +21,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Force ALL text on the website to be WHITE */
+body, h1, h2, h3, h4, h5, h6, p, span, a, li, div {
+  color: white !important;
+}
+
+/* Headings font */
 h1, h2 {
   font-family: "Roboto", sans-serif;
 }
 
-/* Custom utility */
+/* Custom Tailwind utility */
 @layer utilities {
   .gradient {
     background: linear-gradient(-45deg, #302b63, #00bf8f, #1cd8d2);
