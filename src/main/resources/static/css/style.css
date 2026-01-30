@@ -1441,3 +1441,17 @@ textarea.form-control {
         padding: 1.5rem;
     }
 }
+
+.leetcode-icon {
+    width: 20px;
+    height: 22px;
+    filter: grayscale(100%);
+}
+
+.social-link:hover .leetcode-icon {
+    filter: none;
+}
+
+.hero-visual-frame img {
+    object-position: center 20%;
+}
