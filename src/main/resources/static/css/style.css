@@ -1505,3 +1505,23 @@ html, body {
     display: block;
   }
 }
+
+/* ===== FORCE HERO TO CENTER ON SMALL + DESKTOP-MOBILE ===== */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-visual {
+    margin-top: 2rem;
+  }
+}
+
