@@ -3,18 +3,24 @@
 <th:block th:fragment="contact-section">
     <section class="section contact" id="contact">
         <div class="container">
+
+            <!-- Section Title -->
             <div class="section-title-container">
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-subtitle">
                     Let’s build scalable applications together.
                 </p>
             </div>
+
             <div class="contact-container">
+
+                <!-- Contact Info -->
                 <div class="contact-info">
                     <h3 class="contact-heading">Let’s build something amazing.</h3>
                     <p class="contact-text">
                         I’m a Backend Java Developer with strong Spring Boot fundamentals and hands-on experience building RESTful APIs, along with working knowledge of React and frontend basics.
                     </p>
+
                     <div class="contact-links">
                         <a href="tel:+919172032542" class="contact-link">
                             <div class="contact-link-icon">
@@ -25,7 +31,8 @@
                                 <span class="contact-link-value">+91 9172032542</span>
                             </div>
                         </a>
-                        <a href="mailto:bushansc@gmail.com" class="contact-link">
+
+                        <a href="mailto:nikhilsable5050@gmail.com" class="contact-link">
                             <div class="contact-link-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
@@ -34,7 +41,10 @@
                                 <span class="contact-link-value">nikhilsable5050@gmail.com</span>
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/nikhil-sable-51b781283/" target="_blank" class="contact-link">
+
+                        <a href="https://www.linkedin.com/in/nikhil-sable-51b781283/"
+                           target="_blank"
+                           class="contact-link">
                             <div class="contact-link-icon">
                                 <i class="fab fa-linkedin-in"></i>
                             </div>
@@ -45,28 +55,60 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Contact Form -->
                 <div class="contact-form">
-                    <form action="https://api.web3forms.com/submit" method="post">
-                        <input type="hidden" name="access_key" value="6ec11015-bf5e-49b2-aa21-4c5672218c70">
+                    <form action="https://formsubmit.co/nikhilsable5050@gmail.com" method="POST">
+
+                        <!-- FormSubmit config -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                        <input type="hidden" name="_template" value="table">
+
                         <div class="form-group">
                             <label for="name" class="form-label">Your Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="John Doe" name="name">
+                            <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="John Doe"
+                                    required
+                            >
                         </div>
+
                         <div class="form-group">
                             <label for="email" class="form-label">Your Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="john@example.com" name="email">
+                            <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="john@example.com"
+                                    required
+                            >
                         </div>
+
                         <div class="form-group">
                             <label for="message" class="form-label">Your Message</label>
-                            <textarea id="message" class="form-control" placeholder="How can I help you?" name="message"></textarea>
+                            <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-control"
+                                    placeholder="How can I help you?"
+                                    required
+                            ></textarea>
                         </div>
+
                         <button type="submit" class="btn btn-primary">
                             Send Message <i class="fas fa-paper-plane"></i>
                         </button>
+
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
 </th:block>
-</html>dr
+</html>
