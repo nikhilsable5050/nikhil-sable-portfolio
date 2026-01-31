@@ -1526,3 +1526,25 @@ textarea.form-control {
     display: none;
   }
 }
+
+
+/* ===== FORCE PERFECT CENTERING (FINAL) ===== */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
