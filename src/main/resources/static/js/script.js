@@ -84,3 +84,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+
+/* ===== MOBILE HAMBURGER MENU FIX ===== */
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.querySelector(".mobile-menu-btn");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (!menuBtn || !navLinks) return;
+
+  // Toggle mobile menu
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+  });
+
+  // Close menu when clicking any nav link
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      document.body.classList.remove("menu-open");
+    });
+  });
+
+  // Safety: close menu on resize to desktop
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove("active");
+      document.body.classList.remove("menu-open");
+    }
+  });
+});
