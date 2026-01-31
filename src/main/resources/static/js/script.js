@@ -1,20 +1,18 @@
-// Loading Animation
-window.addEventListener('load', () => {
+// Loading Animation (SAFE – mobile friendly)
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader-wrapper");
+  if (!loader) return;
+
   setTimeout(() => {
-      document.querySelector('.loader-wrapper').style.opacity = '0';
-      setTimeout(() => {
-          document.querySelector('.loader-wrapper').style.display = 'none';
-      }, 500);
-  }, 1500);
+    loader.classList.add("fade-out");
+  }, 1200);
 });
 
-//document.addEventListener('mousedown', () => {
-//  cursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
-//});
-//
-//document.addEventListener('mouseup', () => {
-//  cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-//});
+setTimeout(() => {
+  const loader = document.querySelector(".loader-wrapper");
+  if (loader) loader.classList.add("fade-out");
+}, 4000);
+
 
 // Scrolled Header
 window.addEventListener('scroll', () => {

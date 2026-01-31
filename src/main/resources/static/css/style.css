@@ -1455,3 +1455,10 @@ textarea.form-control {
 .hero-visual-frame img {
     object-position: center 20%;
 }
+
+/* Fade-out state (loader still exists, just fades) */
+.loader-wrapper.fade-out {
+    opacity: 0;
+    pointer-events: none;   /* allows clicks */
+    transition: opacity 0.8s ease;
+}
