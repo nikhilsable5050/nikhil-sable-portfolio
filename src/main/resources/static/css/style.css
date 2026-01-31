@@ -1463,15 +1463,9 @@ textarea.form-control {
     transition: opacity 0.8s ease;
 }
 
-/* ===== MOBILE NAV HARD OVERRIDE (HACK FIX) ===== */
+/* ===== FINAL MOBILE NAV FIX (NO MISALIGNMENT) ===== */
 @media (max-width: 768px) {
 
-  /* Cancel old display:none */
-  .nav-links {
-    display: flex !important;
-  }
-
-  /* Force safe off-canvas behavior */
   .nav-links {
     position: fixed;
     top: 70px;
@@ -1481,22 +1475,28 @@ textarea.form-control {
     height: calc(100vh - 70px);
     background: var(--darker-color);
 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 
     transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
+
     transition: transform 0.3s ease;
     z-index: 999;
   }
 
   .nav-links.active {
     transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .mobile-menu-btn {
-    display: block !important;
+    display: block;
   }
 
   body.menu-open {
