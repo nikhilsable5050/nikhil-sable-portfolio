@@ -1462,15 +1462,33 @@ textarea.form-control {
     pointer-events: none;   /* allows clicks */
     transition: opacity 0.8s ease;
 }
-/* ===== FINAL MOBILE NAV FIX (NO MISALIGNMENT) ===== */
+
+/* ===== FINAL MOBILE NAV + HEADER FIX (KEEP ONLY THIS) ===== */
 @media (max-width: 768px) {
 
+  /* Header & containers must be full-width on mobile */
+  .header .container,
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .header-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Mobile nav off-canvas */
   .nav-links {
     position: fixed;
     top: 70px;
     left: 0;
-
-    width: 100%;                /* ✅ FIX */
+    width: 100%;
     height: calc(100vh - 70px);
     background: var(--darker-color);
 
@@ -1483,7 +1501,6 @@ textarea.form-control {
     transform: translateX(100%);
     visibility: hidden;
     pointer-events: none;
-
     transition: transform 0.3s ease;
     z-index: 999;
   }
@@ -1498,32 +1515,14 @@ textarea.form-control {
     display: block;
   }
 
-  body.menu-open {
-    overflow: hidden;
-  }
-}
-/* ===== CLEAN MOBILE LAYOUT FIX (FINAL) ===== */
-@media (max-width: 768px) {
-
-  .header-container {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0 16px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .container {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0 16px;
-  }
-
   html, body {
     overflow-x: hidden;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .floating-shape {
+    display: none;
   }
 }
