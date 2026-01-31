@@ -1525,3 +1525,33 @@ html, body {
   }
 }
 
+/* ===== VISUAL CENTERING FIX (MOBILE) ===== */
+@media (max-width: 768px) {
+  .floating-shape,
+  .hero-background {
+    display: none;
+  }
+}
+
+/* ===== FINAL CONTAINER CENTER FIX ===== */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Header must follow same centering */
+.header-container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
