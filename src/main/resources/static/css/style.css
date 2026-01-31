@@ -1555,3 +1555,22 @@ html, body {
   align-items: center;
   justify-content: space-between;
 }
+
+
+/* ===== ABSOLUTE FINAL CENTER FIX (ALL VIEWS) ===== */
+
+/* Kill percentage-based width */
+.container {
+  width: 100% !important;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header must obey same rule */
+.header-container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
