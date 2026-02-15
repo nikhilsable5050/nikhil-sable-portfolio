@@ -4,10 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-# Give execute permission
 RUN chmod +x mvnw
-
-# Build app
 RUN ./mvnw clean package -DskipTests
 
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["java", "-jar", "target/portfolio-0.0.1-SNAPSHOT.jar"]
