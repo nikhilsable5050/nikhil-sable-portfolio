@@ -1,30 +1,30 @@
 # 🌐 Nikhil Sable — Developer Portfolio
 
-Welcome to my personal developer portfolio website repository.  
-This portfolio showcases my skills, projects, and backend development journey using Java and Spring Boot.
+Welcome to my personal developer portfolio repository.  
+This website showcases my skills, projects, and backend development journey using Java and Spring Boot.
 
 🔗 **Live Website:**  
-https://nikhil-sable-portfolio.up.railway.app
+https://nikhil-sable-portfolio.onrender.com
 
 ---
 
 ## 👨‍💻 About Me
-I am an aspiring **Backend Developer** focused on building scalable and efficient web applications using **Java and Spring Boot**.  
+I am an aspiring **Backend Developer** focused on building scalable and efficient web applications using **Java and Spring Boot**.
 
 I continuously improve my skills by developing real-world projects and learning modern backend technologies.
 
-I am currently seeking **Backend / Java Developer opportunities**.
+Currently seeking **Backend / Java Developer opportunities**.
 
 ---
 
 ## 🚀 Features
-- Fully responsive portfolio website
+- Responsive portfolio website
 - Projects showcase section
 - Skills & achievements section
 - Contact section
-- Smooth navigation experience
+- Smooth navigation
 - Mobile-friendly design
-- Fast and optimized loading
+- Optimized performance
 
 ---
 
@@ -36,13 +36,22 @@ I am currently seeking **Backend / Java Developer opportunities**.
 - Maven
 - REST APIs
 
-### Frontend Integration
+### Frontend
 - HTML5
 - CSS3
 - JavaScript
+- Thymeleaf
 
 ### Tools & Deployment
 - Git & GitHub
-- Railway (Deployment Platform)
+- Docker
+- Render (Cloud Deployment)
 
 ---
+
+## 📬 Contact
+Feel free to connect with me:
+
+- LinkedIn: https://www.linkedin.com/in/nikhil-sable-51b781283/
+- GitHub: https://github.com/nikhilsable5050
+- Email: nikhilsable5050@gmail.com
