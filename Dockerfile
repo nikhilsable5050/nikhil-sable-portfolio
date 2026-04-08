@@ -7,4 +7,4 @@ COPY . .
 RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
-CMD ["java", "-jar", "target/portfolio-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/portfolio-0.0.1-SNAPSHOT.jar", "--server.port=${PORT}", "--server.address=0.0.0.0"]
